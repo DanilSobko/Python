@@ -13,17 +13,17 @@
 #### Структура проекту:
 ##### Код розділено на функції, кожна з яких вирішує окрему задачу і має відповідну назву.
 
-# ### Опис файлів:
-# #### student_main.py:
+#### Опис файлів:
+##### student_main.py:
 # Містить Python-код із функціями для вирішення завдань.
 
-# #### README.md:
+##### README.md:
 # Описує структуру проекту, призначення кожного файлу, а також основні функції та методи з поясненням їх роботи.
 
-# ## Опис основних функцій та методів з поясненням їх роботи:
+### Опис основних функцій та методів з поясненням їх роботи:
 
-# ### interpolate_missing(numb):
-# #### Опис:
+#### interpolate_missing(numb):
+##### Опис:
 # Функція виконує інтерполяцію відсутніх значень у масиві.
 
 def interpolate_missing(numb):
@@ -59,8 +59,8 @@ def interpolate_missing(numb):
             interpolated.append(num)
     return interpolated
 
-# ### fibonacci(n):
-# #### Опис:
+#### fibonacci(n):
+##### Опис:
 # Генерує перші n чисел Фібоначчі.
 
 def fibonacci(n):
@@ -69,15 +69,15 @@ def fibonacci(n):
         yield a
         a, b = b, a + b
 
-# ### process_batches(nums, batch_size):
-# #### Опис:
+#### process_batches(nums, batch_size):
+##### Опис:
 # Обробляє масив чисел по батчах заданого розміру та повертає максимальне число кожного батча.
 
 def process_batches(nums, batch_size):
     return [max(nums[i:i + batch_size]) for i in range(0, len(nums), batch_size)]
 
-# ### encode_string(s):
-# #### Опис:
+#### encode_string(s):
+##### Опис:
 # Кодує рядок за допомогою підрахунку кількості повторюваних символів.
 
 def encode_string(s):
@@ -92,8 +92,8 @@ def encode_string(s):
     encoded += str(count) + s[-1]
     return encoded
 
-# ### decode_string(s):
-# #### Опис:
+#### decode_string(s):
+##### Опис:
 # Декодує закодований рядок, відновлюючи вихідний рядок.
 
 def decode_string(s):
@@ -109,15 +109,15 @@ def decode_string(s):
             i += 1
     return dec
 
-# ### rotate_matrix(matrix):
-# #### Опис:
+#### rotate_matrix(matrix):
+##### Опис:
 # Виконує обертання матриці на 90 градусів за годинниковою стрілкою.
 
 def rotate_matrix(matrix):
     return [list(row) for row in zip(*matrix[::-1])]
 
-# ### regex_search(str, pat):
-# #### Опис:
+#### regex_search(str, pat):
+##### Опис:
 # Виконує пошук рядків, що відповідають заданому регулярному виразу.
 
 import re
@@ -125,8 +125,8 @@ import re
 def regex_search(str, pat):
     return [string for string in str if re.search(pat, string)]
 
-# ### merge_sorted_arrays(arr1, arr2):
-# #### Опис:
+#### merge_sorted_arrays(arr1, arr2):
+##### Опис:
 # Об'єднує два відсортованих масиви в один відсортований масив.
 
 def merge_sorted_arrays(arr1, arr2):
@@ -143,8 +143,8 @@ def merge_sorted_arrays(arr1, arr2):
     merged.extend(arr2[j:])
     return merged
 
-# ### is_prime(num):
-# #### Опис:
+#### is_prime(num):
+##### Опис:
 # Перевіряє, чи є задане число простим.
 
 def is_prime(num):
@@ -155,8 +155,8 @@ def is_prime(num):
             return False
     return True
 
-# ### group_by_key(data, key):
-# #### Опис:
+#### group_by_key(data, key):
+##### Опис:
 # Групує елементи словника за заданим ключем.
 
 def group_by_key(data, key):
@@ -165,8 +165,8 @@ def group_by_key(data, key):
         grouped.setdefault(item[key], []).append(item['value'])
     return grouped
 
-# ### remove_outliers(list):
-# #### Опис:
+#### remove_outliers(list):
+##### Опис:
 # Видаляє виброси з масиву чисел.
 
 import numpy as np
@@ -179,11 +179,11 @@ def remove_outliers(list):
 
     return [x for x, z in zip(list, z_scores) if abs(z) <= threshold]
 
-# ## Результати:
-# ### Виведення результатів роботи кожної функції наведено у вигляді рядків, де кожен рядок відповідає певній функції.
+### Результати:
+#### Виведення результатів роботи кожної функції наведено у вигляді рядків, де кожен рядок відповідає певній функції.
 
-# ## Висновки:
-# ### Мета роботи досягнута: були розглянуті та реалізовані різні методи обробки числових масивів у Python, а також набуті навички роботи з ними.
+### Висновки:
+#### Мета роботи досягнута: були розглянуті та реалізовані різні методи обробки числових масивів у Python, а також набуті навички роботи з ними.
 
 # ## Інструкції з запуску:
 # ### Відкрийте файл будь-яким зручним для вас способом, де є встановлений інтерпретатор Python. Додайте необхідні виведення, наведені у файлі README.md. Після цього запустіть файл для отримання необхідних результатів.
