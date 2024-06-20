@@ -98,4 +98,8 @@ print(task10([(1, 2), (3, 4), (1, -1)], 2))  # Виведе: [(1, -1), (1, 2)]
 ### Відкрийте файл будь-яким зручним для вас способом, де є встановлений компілятор Python. Додайте необхідні виведення, наведені у файлі README.md. Після цього запустіть файл для отримання необхідних результатів.
 
 ![image](https://github.com/DanilSobko/Python/assets/144261572/fcaf3853-ed5a-42e2-9a0d-c52c5d11e6fa)
+![image](https://github.com/DanilSobko/Python/assets/144261572/c063f59c-aacb-47ee-80c7-6ef62e26e5cd)
+![image](https://github.com/DanilSobko/Python/assets/144261572/2e99dee9-d78a-41c3-8c20-1380a523dc95)
+
+
 
